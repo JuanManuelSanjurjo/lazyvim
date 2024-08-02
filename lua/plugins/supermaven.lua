@@ -1,6 +1,7 @@
 return {
   {
     "supermaven-inc/supermaven-nvim",
+    event = "VimEnter", -- Cargar después de iniciar Vim
     config = function()
       require("supermaven-nvim").setup({
         keymaps = {

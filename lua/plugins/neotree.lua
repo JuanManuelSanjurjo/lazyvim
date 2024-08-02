@@ -1,6 +1,7 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
+    event = "VimEnter", -- Cargar después de iniciar Vim
     opts = function(_, opts)
       -- Sobrescribir la configuración de la ventana para que Neo-tree aparezca a la derecha
       opts.window = {

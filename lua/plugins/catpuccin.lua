@@ -1,5 +1,6 @@
 return {
   "catppuccin/nvim",
+  event = "VimEnter", -- Cargar después de iniciar Vim
   lazy = false,
   name = "catppuccin",
   priority = 1000,
