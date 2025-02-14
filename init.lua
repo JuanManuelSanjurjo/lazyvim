@@ -1,6 +1,8 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
+vim.g.python3_host_prog = "py"
+
 if vim.fn.executable("pwsh") == 1 then
   vim.o.shell = "pwsh"
 elseif vim.fn.executable("powershell") == 1 then
@@ -11,7 +13,7 @@ vim.o.shellquote = ""
 vim.o.shellxquote = ""
 
 vim.opt.spell = true
-vim.opt.spelllang = { "en", "es" }
+vim.opt.spelllang = { "en_us" }
 
 if vim.g.neovide then
   vim.g.neovide_refresh_rate = 60
